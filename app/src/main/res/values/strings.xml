@@ -3,4 +3,27 @@
     <string name="username_message">Enter your Username</string>
     <string name="button_submit">Submit</string>
     <string name="textField_userNameEntered">"Welcome to the application: "</string>
+    <string-array name="shoppingItems">
+        <item>Brioche bread</item>
+        <item>Poached eggs</item>
+        <item>Hollandaise Sauce</item>
+        <item>Salmon Fillet</item>
+        <item>Avocado</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>€0.55</item>
+        <item>€2.00</item>
+        <item>€1.49></item>
+        <item>€5.60</item>
+        <item>€1.99</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Two pieces of fresh brioche bread.</item>
+        <item>Two freshly poached eggs.</item>
+        <item>A pre-made package of the legendary hollandaise sauce.</item>
+        <item>Smoked salmon fillet from Norway.</item>
+        <item>Ready to eat avocado.</item>
+    </string-array>
 </resources>
