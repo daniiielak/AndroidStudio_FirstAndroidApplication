@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFirstTestApplication</string>
+    <string name="username_message">Enter your Username</string>
+    <string name="button_submit">Submit</string>
+    <string name="textField_userNameEntered">"Welcome to the application: "</string>
+</resources>
