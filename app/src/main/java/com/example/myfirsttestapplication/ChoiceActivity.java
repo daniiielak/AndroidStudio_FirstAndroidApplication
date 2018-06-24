@@ -70,5 +70,15 @@ public class ChoiceActivity extends AppCompatActivity {
             }
 
         });
+
+        // Button to launch SQL Shopping List
+        Button SQLShoppingListButton = (Button) findViewById(R.id.sqlShoppingListButton);
+        SQLShoppingListButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent sqlShoppingListSwitchIntent = new Intent(getApplicationContext(), SQLShoppingList.class);
+                startActivity(sqlShoppingListSwitchIntent);
+            }
+        });
     }
 }
