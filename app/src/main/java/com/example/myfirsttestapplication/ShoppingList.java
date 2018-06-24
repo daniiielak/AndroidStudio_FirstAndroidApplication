@@ -1,8 +1,11 @@
 package com.example.myfirsttestapplication;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ShoppingList extends AppCompatActivity {
@@ -27,5 +30,15 @@ public class ShoppingList extends AppCompatActivity {
         ItemAdapter itemAdapter = new ItemAdapter(this, shoppingItems, prices, descriptions);
         myShoppingList.setAdapter(itemAdapter);
 
+        myShoppingList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent detailViewIntent = new Intent(getApplicationContext(), DetailView.class);
+                detailViewIntent.putExtra("com.example.myfirsttestapplication.ITEM_INDEX", i);
+                startActivity(detailViewIntent);
+            }
+        });
+
+        }
+
     }
-}

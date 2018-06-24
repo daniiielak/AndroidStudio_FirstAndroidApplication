@@ -27,10 +27,12 @@
         </activity>
         <activity
             android:name=".ChoiceActivity"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".ShoppingList"
-            android:parentActivityName=".ChoiceActivity"/>
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ShoppingList"
+            android:parentActivityName=".ChoiceActivity" />
+        <activity android:name=".DetailView"
+            android:parentActivityName=".ShoppingList"></activity>
     </application>
 
 </manifest>
